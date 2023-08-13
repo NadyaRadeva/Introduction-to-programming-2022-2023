@@ -37,5 +37,12 @@ int main() {
 	}
 
 	std::cout << matrixSum(n, matrix) << std::endl;
+
+	for(int i = 0; i < n; i++) {
+        delete[] matrix[i]
+        }
+	
+        delete[] matrix;
+	
 	return 1;
 }
