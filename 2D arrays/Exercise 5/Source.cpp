@@ -57,5 +57,13 @@ int main() {
 	}
 
 	removeRow(matrix, n, n, m);
-	print(matrix, n - 1, n);
+	print(matrix, n - 1);
+
+	for (size_t i = 0; i < n; ++i) {
+		delete[] matrix[i];
+	}
+
+	delete[] matrix;
+
+	return 1;
 }
